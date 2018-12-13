@@ -1,0 +1,797 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+
+	<title>Brujula Tours</title>
+		
+	<link rel="icon" href="img/favicon.png"/>		
+	<meta name="encoding" charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="author" content="Elena García Bonilla"/>
+	<meta name="description" content="Brujula Tours te guiara en tus viajes por las ciudad más bonitas de Europa y con los mejores guias."/>
+	<meta name="keywords" content="free tour, tours gratis, tours, viaje madrid, ciudades europeas, madrid, venecia, paris, londres, amsterdam, bruselas, brujas, turismo en madrid, turismo en venecia, turismo en paris, turismo en londres, turismo en amsterdam, turismo en bruselas, turismo en brujas, free tour madrid, free tour venecia, free tour paris, free tour londres, free tour amsterdam, free tour bruselas, free tour brujas"/>
+	
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+	<link rel="stylesheet" href="css/themes/brujulatours.css" />
+  	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	
+	<!-- DNS jQuery -->
+	
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<script type="text/javascript" src="js/javas.js" ></script>
+
+
+</head>
+<body>
+
+	<!-- PAGINA DE INICIO -->
+	<div data-role="page" id="inicio" data-theme="a">
+
+		<div data-role="header" id="head">
+
+			<h1><a href="index.html"><img src="img/brujulatours.png" alt="brujula tours" id="logoBrujula"></a></h1>
+
+			<a href="#menu" data-role="button" data-icon="bars" data-iconpos="notext" id="btn_menu" ></a>
+			
+		</div>
+
+		<div data-role="panel" id="menu" data-position="right" data-display="overlay">
+		<ul data-role="listview">
+			<li><a href="#inicio" data-transition="slide">Inicio</a></li>
+			<li><a href="#destinos" data-transition="slide">Destinos</a>
+
+				<div data-role="collapsible">
+					<h2 class="e_text">Amsterdam</h2>
+					<ul data-role="listview">
+					<li><a href="#ams" id="" class="">Amsterdam a pie</a></li>
+					<li><a href="#ams2" id="" class="">Amsterdam bike</a></li>
+					</ul>
+				</div>
+
+				<div data-role="collapsible">
+					<h2 class="e_text">Londres</h2>
+					<ul data-role="listview">
+					<li><a href="#lon" id="" class="">Londres a pie</a></li>
+					<li><a href="#lon2" id="" class="">Harry Potter</a></li>
+					</ul>
+				</div>
+				<div data-role="collapsible">
+					<h2 class="e_text">París</h2>
+					<ul data-role="listview">
+					<li><a href="#par" id="" class="">Paseando por París</a></li>
+					<li><a href="#par2" id="" class="">Moulin Rouge</a></li>
+					</ul>
+				</div>
+
+				<div data-role="collapsible">
+					<h2 class="e_text">Venecia</h2>
+					<ul data-role="listview">
+					<li><a href="#ven" id="" class="">Venecia a pie</a></li>
+					<li><a href="#ven2" id="" class="">Murano y Venecia</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<li><a href="#reservar">Reserva</a></li>
+			<li><a href="#nosotros">Nosotros</a></li>
+		</ul>
+	</div>
+
+		<div data-role="content" id="contenido">
+			
+			<div id="slider">
+				
+				<div class="animacion_img">  
+					<img src="img/amsterdam.jpg" width="600" height="450" class="foto1" />  
+					<img src="img/londres.jpg" width="600" height="450" class="foto2" />  
+					<img src="img/venecia.png" width="600" height="450" class="foto3" />  
+				</div>
+				
+			</div>
+
+			<div id="description">
+
+				<h2 id="title">"Somos tu guía de confianza"</h2>
+				<p class="text"><span>Brujula Tours</span> te ofrece fantásticas visitas guiadas por diferentes ciudades de Europa.</p>
+				
+			</div>
+
+			<div id="popularDestin">
+
+				<h2 class="titulo_encabezado">Tours más populares</h2>
+
+				<div id="country">
+
+					<div id="paris">
+						<div class="cartel"><a class="enlace_ciu" href="#destinos">Paris</a></div>
+						<img src="img/paris.png" alt="amsterdam">
+					</div>
+
+					<div id="londres">
+						<div class="cartel"><a href="#destinos">Londres</a></div>
+						<img src="img/londres.png" alt="amsterdam">
+					</div>
+
+					<div id="venecia">
+							<div class="cartel"><a href="#destinos">Venecia</a></div>
+						<img src="img/venecia.png" alt="amsterdam">
+					</div>
+
+					<div id="amsterdam">
+							<div class="cartel"><a href="#destinos">Amsterdam</a></div>
+						<img src="img/amsterdam.png" alt="amsterdam">
+						
+					</div>
+					
+				</div>
+
+
+			</div>
+
+				<div id="booking">
+
+						<h2 class="titulo_encabezado">¿Cómo puedes reservar?</h2>
+
+						<div class="c_plan">
+
+							<h2 id="title">Elige</h2>
+							<img src="img/elige.png" alt="facebook">
+							<p class="text"><span>¿Sábes donde quieres viajar?</span> 
+								Elige el tour que mas te guste y si no sabes a que ciudad ir, no dudes en preguntarnos.</p>
+						</div>
+
+						<div class="c_plan">
+						<h2 id="title">Planifica</h2>
+						<img src="img/planifica.png" alt="facebook">
+
+						<p class="text"><span>¿Sábes cuando vas a hacer el tour?</span> 
+							Consulta nuestro calendario y elige el día y la hora que mejor se adapte a tus necesidades.</p>
+						</div>
+						<div class="c_plan">
+						<h2 id="title">Reserva</h2>
+						<img src="img/reserva.png" alt="facebook">
+
+						<p class="text"><span>¿Ya te has decidido?</span> 
+							Solo tienes que reservar y te enviaremos un email de confirmación.</p>
+						</div>
+				</div>
+
+				<div id="tripadvisor">
+					<h2>Deja tu opinión</h2>
+					<img src="img/tripadvisor.png" alt="tripadvisor" id="">	
+				</div>	
+		</div>
+
+		<div id="footer">
+
+			<img src="img/brujulatours.png" alt="logo">
+
+			<div id="socialN">
+				<img src="img/facebook.png" alt="facebook">
+				<img src="img/twitter.png" alt="facebook">
+				<img src="img/instagram.png" alt="facebook">
+				<img src="img/tripadvi.png" alt="facebook">
+			</div>
+
+			<div id="pp_cook">
+				<a href="#pp" data-transition="pop">Politica de Privacidad</a>
+				<a href="#pp" data-transition="pop">Cookies</a>
+			</div>
+			
+		</div>
+
+	</div>
+
+
+	<!-- PAGINA DE destinos -->
+
+	<div data-role="page" id="destinos">
+
+		<div data-role="header" id="head">
+
+			<h1><a href="index.html"><img src="img/brujulatours.png" alt="brujula tours" id="logoBrujula"></a></h1>
+
+			<a href="#menu" data-role="button" data-icon="bars" data-iconpos="notext" id="btn_menu" ></a>
+			
+		</div>
+
+		<div data-role="panel" id="menu" data-position="right" data-display="overlay">
+			<ul data-role="listview">
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#destinos">Destinos</a>
+	
+					<div data-role="collapsible">
+						<h2 class="e_text">Amsterdam</h2>
+						<ul data-role="listview">
+						<li><a href="#ams" >Amsterdam a pie</a></li>
+						<li><a href="#ams2" >Amsterdam bike</a></li>
+						</ul>
+					</div>
+	
+					<div data-role="collapsible">
+						<h2 class="e_text">Londres</h2>
+						<ul data-role="listview">
+						<li><a href="#lon" >Londres a pie</a></li>
+						<li><a href="#lon2" >Harry Potter</a></li>
+						</ul>
+					</div>
+					<div data-role="collapsible">
+						<h2 class="e_text">París</h2>
+						<ul data-role="listview">
+						<li><a href="#par" >Paseando por París</a></li>
+						<li><a href="#par2">Moulin Rouge</a></li>
+						</ul>
+					</div>
+	
+					<div data-role="collapsible">
+						<h2 class="e_text">Venecia</h2>
+						<ul data-role="listview">
+						<li><a href="#ven">Venecia a pie</a></li>
+						<li><a href="#ven2">Murano y Venecia</a></li>
+						</ul>
+					</div>
+				</li>
+	
+				<li><a href="#reservar">Reserva</a></li>
+				<li><a href="#nosotros">Nosotros</a></li>
+			</ul>
+		</div>
+
+		<div data-role="content" id="contenido">
+			
+			<div id="sliderTours">
+
+				<img src="img/cabecera/tours.jpg" alt="">
+				
+			</div>
+
+			<div id="descriptionTours">
+				<p class="text">Consulta los tours disponibles</p>	
+			</div>
+
+			<div id="filterTours">
+				<center>
+				<ul data-role="listview" data-filter="true" data-inset="true" data-filter-placeholder="Busca por destino">
+
+					<li data-role="list-divider" id="encabezado">Amsterdam</li>
+					<li><a href="#ams" id="btn_ams" class="btns" data-transition="slide">
+						<h2 class="title_destin">Amsterdam a pie</h2>
+						<p>Free tour</p>
+					</a></li>
+
+					<li><a href="" id="btn_ams2" class="btns">
+						<h2 class="title_destin">Amsterdam Bike</h2>
+						<p>desde 10€</p>
+					</a></li>
+
+					<li data-role="list-divider" id="encabezado">Londres</li>
+					<li><a href="" id="btn_lon" class="btns">
+						<h2 class="title_destin">Londres a pie</h2>
+						<p>Free tour</p>
+					</a></li>
+
+					<li><a href="" id="btn_lon2" class="btns">
+						<h2 class="title_destin">Harry Potter Londres</h2>
+						<p>desde 20€</p>
+					</a></li>
+
+
+					<li data-role="list-divider" id="encabezado">Venecia</li>
+					<li><a href="" id="btn_ven" class="btns">
+						<h2 class="title_destin">Venecia a pie</h2>
+						<p>Free tour</p>
+					</a></li>
+
+					<li><a href="" id="btn_ven2" class="btns">
+						<h2 class="title_destin">Murano y Venecia</h2>
+						<p>desde 20€</p>
+					</a></li>
+					<li data-role="list-divider" id="encabezado">Paris</li>
+					<li><a href="" id="btn_par" class="btns">
+						<h2 class="title_destin">Paseando por París</h2>
+						<p>Free tour</p>
+					</a></li>
+
+					<li><a href="" id="btn_par2" class="btns">
+						<h2 class="title_destin">Muolin Rouge París</h2>
+						<p>desde 20€</p>
+					</a></li>
+
+				</ul>
+				</center>
+			</div>
+
+		</div>
+
+		<div id="footer">
+
+			<img src="img/brujulatours.png" alt="logo">
+
+			<div id="socialN">
+				<img src="img/facebook.png" alt="facebook">
+				<img src="img/twitter.png" alt="facebook">
+				<img src="img/instagram.png" alt="facebook">
+				<img src="img/tripadvi.png" alt="facebook">
+			</div>
+
+			<div id="pp_cook">
+				<a href="#pp" data-transition="pop">Politica de Privacidad</a>
+				<a href="#cook" data-transition="pop">Cookies</a>
+			</div>
+			
+		</div>
+	</div>
+
+
+	<!-- PAGINA DE RESERVA CONTACTO -->
+
+	<div data-role="page" id="reservar">
+
+		<div data-role="header" id="head">
+
+			<h1><a href="index.html"><img src="img/brujulatours.png" alt="brujula tours" id="logoBrujula"></a></h1>
+
+			<a href="#menu" data-role="button" data-icon="bars" data-iconpos="notext" id="btn_menu" ></a>
+			
+		</div>
+
+		<div data-role="panel" id="menu" data-position="right" data-display="overlay">
+			<ul data-role="listview">
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#destinos">Destinos</a>
+	
+					<div data-role="collapsible">
+						<h2 class="e_text">Amsterdam</h2>
+						<ul data-role="listview">
+						<li><a href="#ams" id="" class="">Amsterdam a pie</a></li>
+						<li><a href="#ams2" id="" class="">Amsterdam bike</a></li>
+						</ul>
+					</div>
+	
+					<div data-role="collapsible">
+						<h2 class="e_text">Londres</h2>
+						<ul data-role="listview">
+						<li><a href="#lon" id="" class="">Londres a pie</a></li>
+						<li><a href="#lon2" id="" class="">Harry Potter</a></li>
+						</ul>
+					</div>
+					<div data-role="collapsible">
+						<h2 class="e_text">París</h2>
+						<ul data-role="listview">
+						<li><a href="#par" id="" class="">Paseando por París</a></li>
+						<li><a href="#par2" id="" class="">Moulin Rouge</a></li>
+						</ul>
+					</div>
+	
+					<div data-role="collapsible">
+						<h2 class="e_text">Venecia</h2>
+						<ul data-role="listview">
+						<li><a href="#ven" id="" class="">Venecia a pie</a></li>
+						<li><a href="#ven2" id="" class="">Murano y Venecia</a></li>
+						</ul>
+					</div>
+				</li>
+	
+				<li><a href="#reservar">Reserva</a></li>
+				<li><a href="#nosotros">Nosotros</a></li>
+			</ul>
+		</div>
+
+		<div data-role="content" id="contenido">
+			
+			<div id="sliderTours">
+
+				<img src="img/cabecera/reserva.jpg" alt="">
+				
+			</div>
+
+			<div id="description">
+				<p class="text">Selecciona en pocos pasos el tour que más te guste </p>
+				<p class="text"> o si estas indecis@ no dudes en ponerte en contacto con nosotros</p>	
+			</div>
+
+			<div id="c_form">
+
+				<form method="POST" action="prueba.php" id="formulario" onsubmit="return validar()">
+					
+					<div data-role="fieldcontain">
+						<label for="nom">Nombre</label>
+						<input type="text" name="nombre" id="nom">
+					</div>
+
+					<div data-role="fieldcontain">
+						<label for="nom">Email</label>
+						<input type="text" name="email" id="nom">
+					</div>
+
+					<div data-role="fieldcontain">
+						<label for="tel">Móvil</label>
+						<input type="text" name="telefono" id="tel">
+					</div>
+
+					<div id="centrardudas">
+
+						<div id="title_cons">Tipo de consulta</div>
+
+
+						<div id="botones">
+						<fieldset data-role="controlgroup" data-type="horizontal">
+							<div data-role="fieldcontain">
+							<label for="reser" class="negro">Reservar</label>
+							<input type="radio" name="consulta" id="reser" data-theme="b">
+							<label for="duda">Dudas</label>
+							<input type="radio" name="consulta" id="duda" data-theme="b">
+							</div>
+						</fieldset>
+						</div>
+
+					</div>
+
+					<div id="reserva">
+
+						<div data-role="fieldcontain">
+						<label>Elige tour</label>
+						<select data-native-menu="false">
+							<option>Amsterdam a pie</option>
+							<option>Amsterdam Bike</option>
+							<option>Londres a pie</option>
+							<option>Harry Potter Londres</option>
+							<option>Venecia a oie</option>
+							<option>Murano y Venecia</option>
+							<option>Paseando por París</option>
+							<option>Moulin Rouge París</option>
+						</select>
+						</div>
+
+						<div data-role="fieldcontain">
+						<label for="dia">Elige día</label>
+						<input type="date" name="dia" id="dia">
+						</div>
+
+						<div data-role="fieldcontain">
+						<label>Elige hora</label>
+						<select data-native-menu="false">
+							<option>10:00</option>
+							<option>11:30</option>
+							<option>18:00</option>
+							<option>20:00</option>
+						</select>
+						</div>
+
+						<div data-role="fieldcontain">
+						<label for="pers">Nº personas</label>
+						<input type="range" min="1" max="4" data-theme="b">
+						</div>
+
+						<div data-role="fieldcontain">
+						<label for="pers">Mensaje</label>
+						<textarea></textarea>
+						</div>
+					</div>
+
+					<div id="consulta">
+
+						<div data-role="fieldcontain">
+						<label>Elige tour</label>
+						<select data-native-menu="false">
+							<option>Amsterdam a pie</option>
+							<option>Amsterdam Bike</option>
+							<option>Londres a pie</option>
+							<option>Harry Potter Londres</option>
+							<option>Venecia a oie</option>
+							<option>Murano y Venecia</option>
+							<option>Paseando por París</option>
+							<option>Moulin Rouge París</option>
+						</select>
+						</div>
+
+						<div data-role="fieldcontain">
+						<label for="pers">Mensaje</label>
+						<textarea></textarea>
+						</div>
+					</div>
+
+					<div data-role="fieldcontain">
+						<input type="checkbox" name="aficiones" id="ppi" data-theme="b">
+						<label for="ppi">Acepto la <a onclick="mostrarPolit()" href="#pp">Politica de Privacidad</a></label>
+					</div>
+					<input type="text" disabled value="Acepte la politica de privacidad" id="error" style="color:red; display:none ;">
+					
+					<div data-role="fieldcontain" >
+						<input type="checkbox" name="politica" id="cc" data-theme="b">
+						<label for="cc">Acepto recibir comunicaciones comerciales</label>
+					</div>
+
+					<div id="botonReser">
+						<input type="submit" value="Reservar"data-theme="b" >
+					</div>
+
+					<div id="botonEnvia">
+						<input type="submit" value="Enviar"> 
+					</div>
+
+			
+				</form>
+				
+			</div>
+
+		</div>
+
+		<div id="footer">
+
+			<img src="img/brujulatours.png" alt="logo">
+
+			<div id="socialN">
+				<img src="img/facebook.png" alt="facebook">
+				<img src="img/twitter.png" alt="facebook">
+				<img src="img/instagram.png" alt="facebook">
+				<img src="img/tripadvi.png" alt="facebook">
+			</div>
+
+			<div id="pp_cook">
+				<a href="#pp" data-transition="pop">Politica de Privacidad</a>
+				<a href="#cook" data-transition="pop">Cookies</a>
+			</div>
+			
+		</div>
+	</div>
+
+
+	<!-- PAGINA AMSTERDAM A PIE -->
+
+	<div data-role="page" id="ams">
+
+		<div data-role="header" id="head">
+
+			<h1><a href="index.html"><img src="img/brujulatours.png" alt="brujula tours" id="logoBrujula"></a></h1>
+
+			<a href="#menu" data-role="button" data-icon="bars" data-iconpos="notext" id="btn_menu" ></a>
+			
+		</div>
+
+		<div data-role="panel" id="menu" data-position="right" data-display="overlay">
+			<ul data-role="listview">
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#destinos">Destinos</a>
+	
+					<div data-role="collapsible">
+						<h2 class="e_text">Amsterdam</h2>
+						<ul data-role="listview">
+						<li><a href="#ams" id="" class="">Amsterdam a pie</a></li>
+						<li><a href="#ams2" id="" class="">Amsterdam bike</a></li>
+						</ul>
+					</div>
+	
+					<div data-role="collapsible">
+						<h2 class="e_text">Londres</h2>
+						<ul data-role="listview">
+						<li><a href="#lon" id="" class="">Londres a pie</a></li>
+						<li><a href="#lon2" id="" class="">Harry Potter</a></li>
+						</ul>
+					</div>
+					<div data-role="collapsible">
+						<h2 class="e_text">París</h2>
+						<ul data-role="listview">
+						<li><a href="#par" id="" class="">Paseando por París</a></li>
+						<li><a href="#par2" id="" class="">Moulin Rouge</a></li>
+						</ul>
+					</div>
+	
+					<div data-role="collapsible">
+						<h2 class="e_text">Venecia</h2>
+						<ul data-role="listview">
+						<li><a href="#ven" id="" class="">Venecia a pie</a></li>
+						<li><a href="#ven2" id="" class="">Murano y Venecia</a></li>
+						</ul>
+					</div>
+				</li>
+	
+				<li><a href="#reservar">Reserva</a></li>
+				<li><a href="#nosotros">Nosotros</a></li>
+			</ul>
+		</div>
+
+		<div data-role="content" id="contenido">
+
+			
+			<div id="imgInfo">
+
+				<h2>Amsterdam a pie</h2>
+
+				<div id="imgTour">
+					<img src="img/amster/trescanales1.jpg" alt="" id="imgAms">
+				</div>
+
+
+				<div id="infoTour">
+
+						<ul data-role="listview" data-inset="true">
+							<li>
+								<img src="img/euro.png" class="ui-li-icon">
+								<p>Gratis</p>
+							</li>
+							<li>
+								<img src="img/calendario.png" class="ui-li-icon">
+								<p>Todos los días</p>
+							</li>
+						</ul>
+						
+						<ul data-role="listview" data-inset="true">
+
+							<li>
+								<img src="img/reloj.png" class="ui-li-icon">
+								<p>2.5 horas</p>
+							</li>
+							<li>
+								<img src="img/hablar.png" class="ui-li-icon">
+								<p>Español</p>
+							</li>
+						</ul>
+	
+				</div>
+
+				
+			</div>
+
+			<div id="monument">
+				<p class="text">El tour incluye las siguientes paradas:</p>
+
+				<ul data-role="listview" data-inset="true">
+					<li><img src="img/punto.png" class="ui-li-icon">Plaza Dam</li>
+					<li><img src="img/punto.png" class="ui-li-icon">Palacio Real</li>
+					<li><img src="img/punto.png" class="ui-li-icon">Barrio Judio</li>
+					<li><img src="img/punto.png" class="ui-li-icon">Edificio de la VOC</li>
+					<li><img src="img/punto.png" class="ui-li-icon">Casa de Rembrandt</li>
+					<li>...y mucho más!!!</li>
+				</ul>
+
+
+			</div>
+
+			<div>
+				<a href="#reservar" data-role="button" data-mini="true" data-transition="flip">Reservar</a>
+			</div>
+
+
+			<div id="map">
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.849188106785!2d4.891566115934087!3d52.373154554853585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c73b4b14ef%3A0x9809b25b80da04f9!2sDam%2C+Amsterdam%2C+Pa%C3%ADses+Bajos!5e0!3m2!1ses!2ses!4v1531816441664" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+					
+			</div>
+
+			
+
+		</div>
+
+		<div id="footer">
+
+			<img src="img/brujulatours.png" alt="logo">
+
+			<div id="socialN">
+				<img src="img/facebook.png" alt="facebook">
+				<img src="img/twitter.png" alt="facebook">
+				<img src="img/instagram.png" alt="facebook">
+				<img src="img/tripadvi.png" alt="facebook">
+			</div>
+
+			<div id="pp_cook">
+				<a href="#pp" data-transition="pop">Politica de Privacidad</a>
+				<a href="#cook" data-transition="pop">Cookies</a>
+			</div>
+			
+		</div>
+	</div>
+
+	<!-- PAGINA DE NOSOTROS -->
+	
+	<div data-role="page" id="nosotros">
+
+		<div data-role="header" id="head">
+
+			<h1><a href="index.html"><img src="img/brujulatours.png" alt="brujula tours" id="logoBrujula"></a></h1>
+
+			<a href="#menu" data-role="button" data-icon="bars" data-iconpos="notext" id="btn_menu" ></a>
+			
+		</div>
+
+		<div data-role="panel" id="menu" data-position="right" data-display="overlay">
+		<ul data-role="listview">
+			<li><a href="#inicio">Inicio</a></li>
+			<li><a href="#destinos">Destinos</a>
+
+				<div data-role="collapsible">
+					<h2 class="e_text">Amsterdam</h2>
+					<ul data-role="listview">
+					<li><a href="#ams" >Amsterdam a pie</a></li>
+					<li><a href="#ams2" >Amsterdam bike</a></li>
+					</ul>
+				</div>
+
+				<div data-role="collapsible">
+					<h2 class="e_text">Londres</h2>
+					<ul data-role="listview">
+					<li><a href="#lon" >Londres a pie</a></li>
+					<li><a href="#lon2" >Harry Potter</a></li>
+					</ul>
+				</div>
+				<div data-role="collapsible">
+					<h2 class="e_text">París</h2>
+					<ul data-role="listview">
+					<li><a href="#par" >Paseando por París</a></li>
+					<li><a href="#par2" >Moulin Rouge</a></li>
+					</ul>
+				</div>
+
+				<div data-role="collapsible">
+					<h2 class="e_text">Venecia</h2>
+					<ul data-role="listview">
+					<li><a href="#ven" >Venecia a pie</a></li>
+					<li><a href="#ven2" >Murano y Venecia</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<li><a href="#reservar">Reserva</a></li>
+			<li><a href="#nosotros">Nosotros</a></li>
+		</ul>
+	</div>
+
+		<div data-role="content" id="contenido">
+			
+			<div id="sliderNosotros">
+				<img src="img/cabecera/nosotros.jpg" alt="">
+			</div>
+
+			<div id="description">
+				<p class="text"><span>Brujula Tours</span> es una empresa joven formada por guías con ganas de compartir contigo sus historias y secretos de las ciudad más bonitas de Europa. </p>
+				<h2 id="title">"Tenemos los mejores guías"</h2>
+			</div>
+
+		
+		</div>
+
+		<div id="footer">
+
+			<img src="img/brujulatours.png" alt="logo">
+
+			<div id="socialN">
+				<img src="img/facebook.png" alt="facebook">
+				<img src="img/twitter.png" alt="facebook">
+				<img src="img/instagram.png" alt="facebook">
+				<img src="img/tripadvi.png" alt="facebook">
+			</div>
+
+			<div id="pp_cook">
+				<a href="#pp" data-transition="pop">Politica de Privacidad</a>
+				<a href="#pp" data-transition="pop">Cookies</a>
+			</div>
+			
+		</div>
+
+	</div>
+	
+	
+	<!-- POLITICA DE PRIVACIDAD CUARO DE DIALOGO -->
+
+
+		<div data-role="page" id="pp" data-dialog="true">
+
+			<div data-role="header" id="head">
+				<h2 id="title_pp">Politica de Privacidad</h2>
+			</div>
+
+			<div data-role="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur velit veritatis officia facilis suscipit hic obcaecati repellendus quibusdam, pariatur iure nam itaque deserunt, fuga quis qui a possimus doloremque quas!</p>
+			</div>
+		
+			
+		</div>
+
+
+</body>
+</html>
